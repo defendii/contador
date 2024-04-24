@@ -6,7 +6,16 @@ let modo = "caracteres"
 
 function handleImputTexto(evento){
    let tamanho = inputTexto.value.length
-   console.log(tamanho) 
+   if (modo == "caracteres"){
+    if (tamanho == 1){
+        divContador.innerHTML = tamanho + " caractere" 
+       } else {
+        divContador.innerHTML = tamanho + " caracteres" 
+       }
+   } else{
+
+   }
+   
 
 }
 
