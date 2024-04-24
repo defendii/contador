@@ -4,10 +4,6 @@ const btnContar = document.querySelector("[btn-contar]");
 
 let modo = "caracteres"
 
-inputTexto.addEventListener("input", handleImputTexto)
-
-btnContar.addEventListener("click", handleBtnContar)
-
 function handleImputTexto(evento){
    let tamanho = inputTexto.value.length
    console.log(tamanho) 
@@ -25,3 +21,6 @@ function handleBtnContar(evento){
     }
 
 }
+
+inputTexto.addEventListener("input", handleImputTexto)
+btnContar.addEventListener("click", handleBtnContar)
